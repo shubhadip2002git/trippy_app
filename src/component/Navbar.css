@@ -1,0 +1,131 @@
+
+.NavbarItems{
+    background-color: hsla(0, 10%, 62%, 0.945);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99999;
+    
+
+}
+.Navbar-logo{
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.Nvbar-manu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 7px 0px 0px;
+    list-style: none;
+    
+   
+}
+.itemm{
+    padding-left: 35px;
+   
+}
+.nav-links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.button2{
+    display: none;
+
+}
+.nav-links i{
+    padding-right: 10px;
+}
+.nav-links:hover{
+   
+    color: rgb(10, 228, 228);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.nav-links-mobile{
+    display: none;
+}
+.hamburg{
+    display: none;
+}
+
+
+
+@media screen and (max-width : 850px) {
+    .NavbarItems{
+        z-index: 99;
+    }
+    .hamburg{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburg i{
+       font-size: 1.3rem;
+       color: black;
+    }
+    .Nvbar-manu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: #9497a0;
+        
+        list-style: none;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch ;
+        padding: 80px 0px 30px 0px ;
+        margin: 0px;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+        
+       
+    }
+    .Nvbar-manu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-links{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0px;
+        color: black;
+
+    }
+   
+   .button{
+    display: none;
+   }
+    .nav-links:hover{
+        color: hotpink; 
+        transition: all 0.2s ease-in-out;
+    
+    }
+    .button2{
+       display: none;
+       padding: 10px 0px 0px 40px;
+    }
+    
+  
+}
